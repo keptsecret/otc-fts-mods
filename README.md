@@ -20,8 +20,6 @@ The animation is done by changing the area of effect of the spell for each step 
 This uses the ice_tornado magic effect.
 The animation is not exactly 1-to-1 as the given example but quite close enough.
 
-_Note: For some reason, the otclient from edubart on the latest version doesn't render the ice_tornado effect correctly. See [here](https://otland.net/threads/issue-on-the-animation-of-eternal-winter.281595/). So the video is recorded using mehah's otclient._
-
 Files added/changed in TFS:
 
 * `blizzard.lua`: belongs in data/spells/scripts/attack
@@ -73,3 +71,13 @@ Files added in OTC (all go into a `game_movingbutton` folder in modules):
 * `movingbutton.lua`
 * `movingbutton.otmod`
 * `movingbutton.otui`
+
+## Other notes
+
+For TFS 1.4, `fmt` library required causes errors during compilation with version 10.0 (the latest version).
+There is a fix for the current version of TFS [in PR#4491](https://github.com/otland/forgottenserver/pull/4491) that works with C++20, but TFS 1.4 is on C++17.
+I had to make modifications to `tools.h`, `iomarket` and `iomapserialize` based on the linked PR for it to work.
+
+Also, for some reason, the otclient from edubart on the latest version doesn't render the ice_tornado effect correctly. See [here](https://otland.net/threads/issue-on-the-animation-of-eternal-winter.281595/).
+So the video is recorded using mehah's otclient.
+This effect can be seen when using the eternal winter spell as well as the new AOE spell for this.
