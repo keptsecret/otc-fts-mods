@@ -10,7 +10,9 @@ See file `q4.lua`
 
 ## Question 5
 
-![aoe spell](/media/Aoe-Spell.mp4)
+
+https://github.com/keptsecret/otc-fts-mods/assets/27181108/f0c19053-285a-407f-8ec5-3e3b325a982b
+
 
 The attack spell is performed as a spell combination.
 The animation is done by changing the area of effect of the spell for each step in the sequence.
@@ -27,7 +29,9 @@ Files added/changed in TFS:
 
 ## Question 6
 
-![dash](/media/Dash.mp4)
+
+https://github.com/keptsecret/otc-fts-mods/assets/27181108/9c44a818-d752-4388-adbf-ab69f6101692
+
 
 I couldn't figure out how magic effect animation sequence were defined so I chose a different method.
 
@@ -56,7 +60,9 @@ Files added/changed in OTC
 
 ## Question 7
 
-![moving button](/media/Movingbutton.mp4)
+
+https://github.com/keptsecret/otc-fts-mods/assets/27181108/52e77e42-5332-419a-8511-69b00e8db7b7
+
 
 This is done as a module for otclient.
 There is a `MiniWindow` with a `Button`.
