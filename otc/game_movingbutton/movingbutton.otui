@@ -1,0 +1,12 @@
+MiniWindow
+  id: movingButtonWindow
+  !text: tr('See moving button')
+  size: 550 515
+  @onClose: modules.game_movingbutton.onMiniWindowClose()
+
+  Button
+    id: movingButton
+    margin-top: 50
+    !text: tr('Click me!')
+    text-auto-resize: true
+    @onClick: modules.game_movingbutton.move()

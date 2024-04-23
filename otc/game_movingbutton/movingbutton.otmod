@@ -1,0 +1,9 @@
+Module
+  name: game_movingbutton
+  description: Just a moving button in a window
+  author: someone
+  website: https://www.somewebsite.com
+  sandboxed: true
+  scripts: [ movingbutton ]
+  @onLoad: init()
+  @onUnload: terminate()
